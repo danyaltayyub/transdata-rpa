@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>RPA WebApp</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <div class="d-flex justify-content-between">
+        <div class="align-self-center">
+          <img src="./img/logo.png" alt="" srcset="" />
+        </div>
+        <div class="align-self-center right-side-icons">
+          <ul class="nav">
+            <li class="right-list">
+              <img src="./img/search.png" alt="" srcset="" />
+            </li>
+            <li class="right-list">
+              <img src="./img/bell.png" alt="" srcset="" />
+            </li>
+            <li class="right-list">
+              <img src="./img/setting.png" alt="" srcset="" />
+            </li>
+            <li class="right-list-last">
+              <span> <span class="wen">Aftab K.</span> Admin </span>
+              <img src="./img/Placeholder.png" alt="" srcset="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="file-upload-head mt-5">
+        <div class="file-upload-child">
+          <span>hello</span>
+        </div>
+      </div>
+      <div class="file-upload-wrapper">
+        <div class="row d-flex justify-content-center file-upload-heading">
+          <div class="col-md-6 align-items-center">
+            <h2>Please Upload a Raw Package</h2>
+            <p>Select relevant Package to analyze</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between document-wrapper">
+          <div class="">
+            <div class="d-flex justify-content-between">
+              <div class="img-space">
+                <img src="./img/Group.png" alt="" srcset="" />
+              </div>
+              <div class="ml-5">
+                <span class="select-file-upload-2">Select a file </span>
+                <span class="pdf-file-size"
+                  >PDF, file size no more than 10MB</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div id="divHabilitSelectors" class="input-file-container">
+              <form action="" enctype="multipart/form-data">
+                <input
+                  class="input-file hide"
+                  id="fileupload"
+                  name="files"
+                  type="file"
+                  multiple
+                />
+                <label for="fileupload" class="input-file-trigger" tabindex="0"
+                  >Select</label
+                >
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row file-added-wrapper" id="show">
+          <div class="col-md-8">
+            <div class="file-added1 text-left">File Added:</div>
+            <div class="img-info-file1">
+              <img src="./img/pdf.png" alt="" srcset="" />
+              &nbsp;
+              <span>
+                Mortgage.pdf
+                <a
+                  class="preview"
+                  href="/uploads/media/default/0001/01/540cb75550adf33f281f29132dddd14fded85bfc.pdf"
+                  >Preview</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="order-documents">
+           <button class="btn btn-danger">Cancel</button>
+          <button class="btn btn-danger">Analyse</button>
+        </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          Privacy Policy | Terms of Use | Copyright © 2022. All rights reserved
+        </p>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- <script>
+      $(document).ready(function () {
+        $("#show").hide();
+        $(".hide").click(function () {
+          $("#show").show(3000);
+        });
+      });
+    </script> -->
+
+    <script>
+      // ajout de la classe JS à HTML
+      document.querySelector("html").classList.add("js");
+
+      // initialisation des variables
+      var fileInput = document.querySelector(".input-file"),
+        button = document.querySelector(".input-file-trigger"),
+        the_return = document.querySelector(".file-return");
+
+      // action lorsque la "barre d'espace" ou "Entrée" est pressée
+      button.addEventListener("keydown", function (event) {
+        if (event.keyCode == 13 || event.keyCode == 32) {
+          fileInput.focus();
+        }
+      });
+
+      // action lorsque le label est cliqué
+      button.addEventListener("click", function (event) {
+        fileInput.focus();
+        return false;
+      });
+
+      function getFilename(fullPath) {
+        return fullPath.replace(/^.*[\\\/]/, "");
+      }
+
+      // affiche un retour visuel dès que input:file change
+      fileInput.addEventListener("change", function (event) {
+        //the_return.innerHTML = this.value;
+        let file_name = getFilename(this.value);
+
+        file_name = getFilename(file_name);
+        $("#labelFU").text(file_name);
+        console.log(file_name);
+      });
+    </script>
+  </body>
+</html>

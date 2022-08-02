@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>RPA WebApp</title>
+  </head>
+  <body>
+    <div class="nav-wrapper">
+      <div class="d-flex justify-content-between">
+        <div class="align-self-center">
+          <img src="./img/logo.png" alt="" srcset="" />
+        </div>
+        <div class="align-self-center right-side-icons">
+          <ul class="nav">
+            <li class="right-list">
+              <img src="./img/search.png" alt="" srcset="" />
+            </li>
+            <li class="right-list">
+              <img src="./img/bell.png" alt="" srcset="" />
+            </li>
+            <li class="right-list">
+              <img src="./img/setting.png" alt="" srcset="" />
+            </li>
+            <li class="right-list-last">
+              <span> <span class="wen">Aftab K.</span> Admin </span>
+              <img src="./img/Placeholder.png" alt="" srcset="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pkg-address mt-5 ">
+        <div class="d-flex justify-content-between">
+          <div>
+            <pkd-id class="span"> <strong>Package id:</strong> 76409 </pkd-id>
+          </div>
+          <div>
+            <div class="pkg-address span">
+              <strong>Property Address:</strong> 680 Amboy Avenue, Woodbrigde, NJ
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-wrapper mt-5">
+        <div class="tab-head">
+          <h4>Errors Identified From Raw package : Mortgage.pdf</h4>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" class="pt-3">Sr#</th>
+              <th scope="col">Document Type</th>
+              <th scope="col">Document Name</th>
+              <th scope="col">Error Category</th>
+              <th scope="col">Error</th>
+              <th scope="col">Page Number</th>
+              <th scope="col">Download</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="orange-td-border">
+                <span class="orange-td">1</span>
+              </td>
+              <td>Mortgage</td>
+              <td>Mortgage 1</td>
+              <td>Signatures</td>
+              <td>Signature missing</td>
+              <td>20</td>
+              <td><button class="btn btn-danger">
+                <a href="./pdf/without sign.pdf" target="_blank">
+                Download</button></a></td>
+            </tr>
+            <tr>
+              <td class="orange-td-border">
+                <span class="orange-td">2</span>
+              </td>
+              <td>Deed</td>
+              <td>Deed 1</td>
+              <td>Stamp</td>
+              <td>Missing Stamp</td>
+              <td>5</td>
+              <td><button class="btn btn-danger">
+                <a href="./pdf/Without Stamp.pdf" target="_blank">Download</button></a></td>
+            </tr>
+            <tr>
+              <td class="orange-td-border">
+                <span class="orange-td">3</span>
+              </td>
+              <td>Lien</td>
+              <td>Lien 1</td>
+              <td>Date</td>
+              <td>Date missing</td>
+              <td>12</td>
+              <td><button class="btn btn-danger">Download</button></td>
+            </tr>
+            <tr>
+              <td class="orange-td-border">
+                <span class="orange-td">5</span>
+              </td>
+              <td>Contract</td>
+              <td>Contract 1</td>
+              <td>Name</td>
+              <td>Name of seller missing</td>
+              <td>2</td>
+              <td><button class="btn btn-danger">Download</button></td>
+            </tr>
+                 <td class="orange-td-border">
+                <span class="orange-td">4</span>
+              </td>
+              <td>Slips</td>
+              <td>Slips 1</td>
+              <td>Stamp</td>
+              <td>Missing Stamp</td>
+              <td>1</td>
+              <td><button class="btn btn-danger">Download</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination-list">
+            <ul>
+                <li><img src="./img/previous.png" alt="" srcset=""></li>
+                <li> <span class="orange-list">1</span></li>
+                <li> <span class="orange-list">2</span></li>
+                <li> <span class="orange-list">3</span></li>
+                <li><img src="./img/next.png" alt="" srcset=""></li>
+            </ul>
+        </div>
+        <div class="order-documents">
+            <button class="btn btn-danger">
+                Order Documents
+            </button>
+        </div>
+
+      </div>
+      <div class="footer">
+        <p>
+          Privacy Policy | Terms of Use | Copyright © 2022. All rights reserved
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
+ 

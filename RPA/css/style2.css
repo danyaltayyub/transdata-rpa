@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.img-wrapper{
+    width: 60px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(64, 64, 64, 0.3);
+    text-align: center;
+    padding: 15px;
+    border-radius: 40px;
+    margin-right: 25px;
+    display: inline-block;
+}
+.user-name{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+
+
+    color: #ED6A07;
+}
+.user-type-admin{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A098AE;
+}
+
+.card-main{
+    height: 500px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.t-head{
+    background: #F27405;
+    padding: 3px;
+    border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    margin-top: 2rem;
+}
+
+.t-head-child{
+    visibility: hidden;
+}
+
+.upload-box{
+    width: 530px;
+    height: 300px;
+    margin: 0 auto;
+
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.btn-select{
+    align-items: center;
+    padding: 12px 30px;
+    gap: 10px;
+    margin: 0;
+    margin-right: 15px;
+
+    width: 140px;
+    height: 45px;
+
+    background: #ED6A07;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btn-can{
+    vertical-align: bottom;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.btn-cancel{
+    align-items: center;
+    margin: 0;
+    margin-right: 15px;
+
+    background: #ED6A07;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.btn-analys{
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 10px;
+
+    width: 104px;
+    height: 45px;
+
+    border: 1px solid #ED6A07;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.16));
+    border-radius: 5px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.page-footer{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 122.69%;
+
+    margin: 2rem;
+
+    letter-spacing: -0.005em;
+
+    color: #565656;
+}
+
+.search-box{
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 560px;
+    height: 55px;
+
+    border: 2px solid #F27405;
+    border-radius: 40px;
+}
+
+.form-control{
+    border: 0px;
+    border-radius: 40px;
+}
+
+.search-box:focus{
+    outline: none!important;
+}
+
+.form-control:focus {
+    outline: none!important;
+}
+
+.input-group:focus {
+    outline: none!important;
+}
+
+input:focus{
+    outline: none!important;
+}
+
+
+.btn-search{
+    width: 140px;
+    height: 45px;
+    margin: 2.5px;
+    justify-content: center;
+
+    background: #ED6A07;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.16);
+    border-radius: 40px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.fa-font{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 21px;
+    padding-right: 10px;
+}
